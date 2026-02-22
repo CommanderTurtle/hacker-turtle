@@ -18,11 +18,17 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <section id="downloads">
+          <a href="{{ site.github.home_url }}" class="btn">Home</a>
+          <a href="{{ site.github.about_url }}" class="btn">About</a>
+          <a href="{{ site.github.blog_url }}" class="btn">Blog</a>
+          <a href="{{ site.github.shells_url }}" class="btn btn-github"><span class="icon"></span>Shells</a>
+        </section>
         <!--
         <section id="downloads">
           {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+            <a href="{{ site.github.zip_url }}" class="btn">Home</a>
+            <a href="{{ site.github.tar_url }}" class="btn">About</a>
           {% endif %}
           <a href="{{ site.github.tar_url }}" class="btn btn-github"><span class="icon"></span>View the Blog</a>
         </section>
